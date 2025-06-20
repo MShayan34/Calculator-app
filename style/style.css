@@ -1,0 +1,83 @@
+body {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+ /* calculator container */
+.calculator {
+  background: #222;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px #0f0;
+  width: 300px;
+}
+
+/* Display section */
+.display {
+  background: #000;
+  color: #0f0;
+  font-size: 2.2rem;
+  padding: 20px;
+  text-align: right;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+/* Buttons section */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 18px;
+  font-size: 1.2rem;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: rgb(99, 249, 99);
+  color: #000;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+#equal:hover, #clear:hover, #backspace:hover, #divide:hover, #multiply:hover, #subtract:hover, #add:hover {
+  background: #ff952a;
+  color: #000;
+}
+
+/* Scientific button section */
+.scientific-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+
+#sci-btn{
+    background-color: #1c1c1c;
+    color: #0f0;
+}
+
+#equal {
+  color: #ff952a;
+}
+
+#clear, #backspace, #divide, #multiply, #subtract, #add, #equal, #sin, #cos, #tan, #log, #root, #square, #bracket {
+    background-color: #1c1c1c;
+}
+

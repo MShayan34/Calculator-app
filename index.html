@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+ <div class="calculator">
+  <div class="display" id="display">0</div>
+
+  <!-- BASIC BUTTONS -->
+  <div class="buttons">
+    <!-- FIRST ROW-->
+    <button id="clear" onclick="clearDisplay()">C</button>
+    <button id="backspace" onclick="deleteLast()">⌫</button>
+    <button id="divide" onclick="appendOperator('/')">÷</button>
+    <button id="multiply" onclick="appendOperator('*')">×</button>
+    <!-- SECOND ROW-->
+    <button onclick="appendNumber('7')">7</button>
+    <button onclick="appendNumber('8')">8</button>
+    <button onclick="appendNumber('9')">9</button>
+    <button id="subtract" onclick="appendOperator('-')">−</button>
+    <!-- THIRD ROW-->
+    <button onclick="appendNumber('4')">4</button>
+    <button onclick="appendNumber('5')">5</button>
+    <button onclick="appendNumber('6')">6</button>
+    <button id="add" onclick="appendOperator('+')">+</button>
+    <!-- FOURTH ROW-->
+    <button onclick="appendNumber('1')">1</button>
+    <button onclick="appendNumber('2')">2</button>
+    <button onclick="appendNumber('3')">3</button>
+    <button id="equal" onclick="calculate()">=</button>
+    <!-- FIFTH ROW-->
+    <button onclick="appendNumber('0')" class="zero">0</button>
+    <button onclick="appendNumber('.')">.</button>
+    <button onclick="toggleScientific()" id="sci-btn">Sci</button>
+  </div>
+
+  <!-- SCIENTIFIC BUTTONS -->
+  <div class="buttons scientific-buttons" id="scientific-buttons" style="display: none;">
+    <button id="sin" onclick="appendFunction('Math.sin(')">sin</button>
+    <button id="cos" onclick="appendFunction('Math.cos(')">cos</button>
+    <button id="tan" onclick="appendFunction('Math.tan(')">tan</button>
+    <button id="log" onclick="appendFunction('Math.log(')">log</button>
+    <button id="root" onclick="appendFunction('Math.sqrt(')">√</button>
+    <button id="square" onclick="appendOperator('**')">^</button>
+    <button id="bracket" onclick="appendBracket(')')">)</button>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
