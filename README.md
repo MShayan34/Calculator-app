@@ -14,7 +14,7 @@ A responsive calculator with both **basic** and **scientific modes**, built usin
 
 ---
 
-## 📸 Screenshot
+## Screenshot
 <table>
   <ul>
 <img src="screenshot/basic.png" alt="Calculator Screenshot" width="450"/>
